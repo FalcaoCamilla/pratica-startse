@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
     <title>Formulário</title>
 </head>
 <body>
@@ -11,12 +12,12 @@
         <fieldset>
             <legend>Dados Pessoais</legend>
             <div>
-                <label for="nome">Nome:*</label>
+                <label for="nome" class="obrigatorio">Nome:*</label>
                 <input type="text" name="nome" id="nome" placeholder="Nome completo" required>
             </div>
             <div>
-                <label for="email">E-mail:*</label>
-                <input type="email" name="email" id="email" placeholder="exemplo@email.com" required>
+                <label for="email" class="obrigatorio">E-mail:*</label>
+                <input type="mail" name="email" id="email" placeholder="exemplo@email.com" required>
             </div>
         </fieldset>
 
@@ -45,14 +46,14 @@
         </fieldset>
 
         <div>
-            <label for="mensagem">Mensagem*</label>
+            <label for="mensagem" class="obrigatorio">Mensagem:*</label>
             <textarea name="mensagem" id="mensagem" required></textarea>
         </div>
-        <div>
+        <div class="cadastro">
             <input type="checkbox" name="cadastro" id="cadastro">
             <label for="cadastro">Desejo receber e-mails informativos</label>
         </div>
-        <div>
+        <div class="cadastro">
             <input type="submit" value="Enviar mensagem">
         </div>
     </form>
