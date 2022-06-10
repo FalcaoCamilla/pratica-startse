@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div>
+                <label for="nome">Nome:*</label>
+                <input type="text" name="nome" id="nome" placeholder="Nome completo" required>
+            </div>
+            <div>
+                <label for="email">E-mail:*</label>
+                <input type="email" name="email" id="email" placeholder="exemplo@email.com" required>
+            </div>
+        </fieldset>
+
+        <!-- Seleção por opções -->
+        <div>
+            <label for="assunto">Assunto:</label>
+            <select name="assunto" id="assunto">
+                <option value="reclamacao">Reclamação</option>
+                <option value="sugestao">Sugestão</option>
+                <option value="elogio">Elogio</option>
+                <option value="outro">Outro</option>
+            </select>
+        </div>
+        
+        <!-- Seleção por radio -->
+        <fieldset>
+            <legend>Assunto</legend>
+            <input type="radio" name="assunto" value="reclamacao" id="reclamacao">
+            <label for="reclamacao">Reclamação</label>
+            <input type="radio" name="assunto" value="sugestao" id="sugestao">
+            <label for="sugestao">Sugestão</label>
+            <input type="radio" name="assunto" value="elogio" id="elogio">
+            <label for="elogio">Elogio</label>
+            <input type="radio" name="assunto" value="outro" id="outro">
+            <label for="outro">Outro</label>
+        </fieldset>
+
+        <div>
+            <label for="mensagem">Mensagem*</label>
+            <textarea name="mensagem" id="mensagem" required></textarea>
+        </div>
+        <div>
+            <input type="checkbox" name="cadastro" id="cadastro">
+            <label for="cadastro">Desejo receber e-mails informativos</label>
+        </div>
+        <div>
+            <input type="submit" value="Enviar mensagem">
+        </div>
+    </form>
+</body>
+</html>
